@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: transparent;
+  background-image: url(Bgimage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+a:hover {
+  color: rgb(247, 116, 10);
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+.navbar .toggle_btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.action_btn {
+  width: 120px;
+  color: aliceblue;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: salmon;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  transition: scale 0.2s ease;
+}
+.action_btn:hover {
+  scale: 1.09;
+  color: beige;
+}
+.action_btn:active {
+  scale: 0.95;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 70px;
+  height: 0;
+  width: 300px;
+  background: rgba(80, 80, 80, 0.582);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown.open {
+  height: 200px;
+  display: block;
+}
+.dropdown li {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  height: calc(100vh - 60px);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding-top: 300px;
+}
+@media (max-width: 950px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+  .navbar .toggle_btn {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .dropdown {
+    left: 2rem;
+    width: unset;
+  }
+}
