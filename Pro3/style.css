@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto";
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images-ng.pixai.art/images/orig/4a5cbf0a-fbdb-48f1-8589-71a307730ee9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.navbar {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
+  font-size: 35px;
+}
+.logo:hover {
+  color: salmon;
+}
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: salmon;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  min-height: 90%;
+  align-items: center;
+  gap: 2%;
+}
+.col {
+  flex-basis: 70%;
+}
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.btn {
+  width: 170px;
+  font-size: 20px;
+  color: black;
+  padding: 7px 0;
+  border: 0;
+  border-radius: 50px;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  color: salmon;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-style: groove;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 5px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRARPfKaRj0FITWpQGPspRSBRSnPQ1p-6rjqw&s);
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s ease;
+}
+.card h4 {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: end;
+}
+.c2 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmiH_62tkFomBRMEq1PfbeQD4kecAD2lxKTyXlDOPIADHDYFI03714PaVp6RoLITa6C-o&usqp=CAU);
+  background-position: center;
+  background-size: cover;
+}
+.c3 {
+  background-image: url(https://i0.wp.com/www.japanphotoguide.com/wp-content/uploads/2021/02/mt-fuji-japan-photo-guide.jpg?resize=500%2C334);
+  background-position: center;
+  background-size: cover;
+}
+.c4 {
+  background-image: url(https://www.travelcaffeine.com/wp-content/uploads/2018/01/itsukushima-shrine-miyajima-floating-torii-japan-shallow-sunset-bricker.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.col2 {
+  position: relative;
+  margin-left: 20%;
+  align-items: right;
+  justify-content: right;
+}
+.card:hover {
+  transform: translateY(-15px);
+  transform: rotateZ("30");
+}

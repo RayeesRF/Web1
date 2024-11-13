@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-sizing: border-box;
+  }
+  body {
+    background: url(https://img.freepik.com/premium-photo/blue-dark-night-with-stars-sky_1230717-117524.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727049600&semt=ais_hybrid);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-left: 5em;
+  }
+  header {
+    width: 150px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .logo {
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    float: left;
+  }
+  
+  .menu {
+    width: 300px;
+    height: 70px;
+    margin-left: 90px;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: lighter;
+    margin-right: -20px;
+    transition: 0.4s, ease-in-out;
+  }
+  ul li a:hover {
+    color: rgb(250, 190, 150);
+  }
+  .search {
+    width: 300px;
+    margin-left: 140px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .srch {
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgb(250, 190, 150);
+    margin-top: 20px;
+    color: white;
+    border-right: none;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .btn {
+    width: 100px;
+    height: 30px;
+    color: black;
+    border: none;
+    margin-top: 20px;
+    background: rgb(250, 190, 150);
+    font-size: 15px;
+    padding: 5px;
+    margin-left: -10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .btn:hover {
+    background-color: whitesmoke;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    gap: 60px;
+  }
+  
+  .aside {
+    width: 700px;
+    margin-top: 40px;
+    color: whitesmoke;
+    position: relative;
+  }
+  .aside .par {
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+  h2 {
+    padding-top: 5%;
+    line-height: 50px;
+    font-size: 28px;
+  }
+  span {
+    font-size: 40px;
+    padding-left: 2px;
+  }
+  .aside .con {
+    width: 150px;
+    height: 38px;
+    margin-left: 20px;
+    background-color: rgb(248, 175, 127);
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .aside .con a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in;
+  }
+  .aside .con:hover {
+    background-color: white;
+  }
+  .form {
+    width: 290px;
+    height: 350px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 12%;
+  }
+  .form h3 {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(23, 13, 51, 0.418);
+  }
+  .form input {
+    width: 250px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(248, 175, 127);
+    padding: 5px;
+    font-size: 16px;
+    color: aliceblue;
+    margin-top: 15px;
+  }
+  .form input:focus {
+    outline: none;
+  }
+  ::placeholder {
+    color: rgb(122, 124, 126);
+    font-size: 14px;
+  }
+  .form .btnn {
+    width: 150px;
+    height: 38px;
+    background: rgb(248, 175, 127);
+    font-size: 15px;
+    border-radius: 40px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .btnn:hover {
+    background-color: whitesmoke;
+  }
+  .btnn:focus {
+    outline: none;
+  }
+  .btnn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .form .link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(159, 162, 165);
+    letter-spacing: 0.5px;
+    line-height: 20px;
+  }
+  .form .link a {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(248, 175, 127);
+  }
+  .liw {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(188, 194, 201);
+    margin-bottom: -10px;
+  }
+  .icons a {
+    text-decoration: none;
+    color: white;
+  }
+  .icons ion-icon {
+    font-size: 20px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+  .icons ion-icon:hover {
+    color: rgb(248, 175, 127);
+  }
+  
